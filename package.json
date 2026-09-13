@@ -1,0 +1,13 @@
+{
+  "name": "siwibu-frontend",
+  "private": true,
+  "description": "Build Tailwind untuk siWibu. Bukan aplikasi Node — situsnya PHP; berkas ini cuma menjalankan Tailwind CLI.",
+  "scripts": {
+    "build": "tailwindcss -c tailwind.config.js -i build/app.src.css -o assets/css/app.css --minify",
+    "watch": "tailwindcss -c tailwind.config.js -i build/app.src.css -o assets/css/app.css --watch",
+    "cek": "php build/cek.php"
+  },
+  "devDependencies": {
+    "tailwindcss": "3.4.17"
+  }
+}
